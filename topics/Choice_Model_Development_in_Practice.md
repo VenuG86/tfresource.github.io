@@ -30,7 +30,7 @@ Practical
 
 Possibly suspect/difficult variables:
 
--   \[ = f( Yelp Scores)
+-   [Destination Choice](https://tfresource.github.io/topics/Destination_Choice_Models.html) = f( Yelp Scores)
 -   Residential Location Choice = f ( School Quality)
 -   Bike Utility = f(potholes)
 -   Walk Utility = f(violent crime)
@@ -43,11 +43,11 @@ Possibly suspect/difficult variables:
 Are these variables "available to you" in your model system?
 
 -   Person/HH/trip level (easier in microsimulation framework)
--   LOS variables (çan you 'skim' them?)
+-   LOS variables (can you 'skim' them?)
 
 Does adding this variable significantly contribute to run time, memory, or storage requirements?
 
-------------------------------------------------------------------------
+
 
 Consistent
 ----------
@@ -71,16 +71,14 @@ Possible questions to help you differentiate garbage from discovery:
 Example Model Revision:
 ![Example Model Revision](ExampleModelRevision.png "fig:Example Model Revision")
 
-------------------------------------------------------------------------
+
 
 Useful
 ------
 
 *"Does \[ whatever specification you are considering\] have valid and relevant sensitivities?"*
 
-:   
-
-    :   AKA
+   AKA
 
 *"…will it make sense and will anybody care?"*
 
@@ -88,25 +86,31 @@ Useful
 
 **Example 1**
 
-Possible Model:
-:   Transit utility increases with [TAZ](Traffic_Analysis_Zones) population
+**Possible Model**
 
-Incorrect Implication:
-:   We can increase transit usage by making our TAZs larger
+  Transit utility increases with [TAZ](https://tfresource.github.io/topics/Traffic_Analysis_Zone.html) population
 
-Better Model (find the real cause):
-:   Transit utility increases with shorter walk access distances and more frequent transit service (which happen to be common in dense areas with high TAZ populations)
+**Incorrect Implication**
+
+  We can increase transit usage by making our TAZs larger
+
+**Better Model (find the real cause)**
+
+  Transit utility increases with shorter walk access distances and more frequent transit service (which happen to be common in dense areas with high TAZ populations)
 
 **Example 2**
 
-Possible Model:
-:   Bike LOS increases as the average traffic / lane at an intersection decreases
+**Possible Model**
 
-Incorrect Implication:
-:   We can get more people to bike by widening roads at intersections
+  Bike LOS increases as the average traffic / lane at an intersection decreases
 
-Better Model (find the real cause):
-:   Bike LOS increases as conflicts with cars decrease
+**Incorrect Implication**
+  
+  We can get more people to bike by widening roads at intersections
+
+**Better Model (find the real cause)**
+  
+  Bike LOS increases as conflicts with cars decrease
 
 ### Is Your Model Specification Relevant?
 
@@ -117,5 +121,4 @@ Make sure you have the sensitivity you need to answer your boss's boss's questio
 **Example**
 are parking maximums the next hot political battle in your region? make sure you have parking competitiveness in your models!
 
-------------------------------------------------------------------------
 
